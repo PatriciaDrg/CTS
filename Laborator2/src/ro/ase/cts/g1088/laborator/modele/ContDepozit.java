@@ -1,6 +1,7 @@
 package ro.ase.cts.g1088.laborator.modele;
 
 import ro.ase.cts.g1088.laborator.exceptii.ExceptieFonduriInsuficiente;
+import ro.ase.cts.g1088.laborator.exceptii.ExceptieTransferIlegal;
 
 public class ContDepozit extends ContBancar {
   
@@ -27,8 +28,13 @@ public class ContDepozit extends ContBancar {
 	}
 
 	@Override
-	public void transfer(Cont destinatie, Double valoare) {
+	public void transfer(Cont destinatie, Double valoare) throws ExceptieFonduriInsuficiente , ExceptieTransferIlegal {
 		
-		
+		if(this == destinatie) {
+			 throw new ExceptieTransferIlegal();
+			 }
+		this.extrage(valoare);
+		destinatie.alimenteazaContul(valoare);
+		}
 	}
-}
+
