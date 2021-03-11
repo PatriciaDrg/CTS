@@ -1,0 +1,10 @@
+code review
+
+1.Conventii de nume
+-numele clasei nu este corect;nu sugereaza scopul clasei;
+-numele functiei nu este ok;
+-parametrii nu sunt ok;numele argumentului functiei nu sunt ok;
+-variabila rezultat trebuie redenumita;
+-variabila valoare trebuie redenumita;
+
+-elimina valorile predefinite din functie
