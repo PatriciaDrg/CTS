@@ -12,3 +12,6 @@ code review
 2. single resp si kiss pentru functii
 -metoda cacluleaza prea multe valori intermediare
 -se repeta o parte din prelucrari
+
+-am modificat clasa produs
+-eliminare dependente legate de validarea datelor si prelucrarea discountului 
