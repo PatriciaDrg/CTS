@@ -4,12 +4,32 @@ import ro.ase.csie.cts.g1088.laborator3.exceptii.ExceptiePretInvalid;
 import ro.ase.csie.cts.g1088.laborator3.exceptii.ExceptieVechimeClienti;
 import ro.ase.csie.cts.g1088.laborator3.faza3.servicii.InterfataMarketing;
 import ro.ase.csie.cts.g1088.laborator3.faza3.servicii.InterfataValidare;
+import ro.ase.csie.cts.g1088.laborator3.faza3.servicii.ServicuValidari;
+import ro.ase.csie.cts.g1088.laborator3.faza3.servicii.StrategieMarketing2021;
 
 public class Produs {
 	
-	InterfataMarketing serviciuMK=null;
+	InterfataMarketing serviciuMK= null;
 	
 	InterfataValidare serviciuValidare =null;
+	
+	public Produs(InterfataMarketing mk, InterfataValidare validare) {
+		if(mk == null) {
+			throw new NullPointerException();
+		}
+		if(validare == null) {
+			throw new NullPointerException();
+		}
+		this.serviciuMK=mk;
+		this.serviciuValidare=validare;
+	}
+	
+	public void setStrategieMarketing(InterfataMarketing strategie) {
+		if(strategie == null) {
+			throw new NullPointerException();
+		}
+		this.serviciuMK=strategie;
+	}
 	
 	
 	
