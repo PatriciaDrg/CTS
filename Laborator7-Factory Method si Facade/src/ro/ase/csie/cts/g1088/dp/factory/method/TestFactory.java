@@ -13,7 +13,7 @@ public class TestFactory {
 		FactoryAbstractCaracter factoryCaracter = null;
 		factoryCaracter=(isModJoc4Kids) ? new FcatoryMod4Kids(): new FactoryModNormal();
 		
-		Caracter superman =factoryCaracter.getCaracter(TipCaracter.MARVEL, "Superman");
+		CaracterJoc superman =factoryCaracter.getCaracter(TipCaracter.MARVEL, "Superman");
 	}
 	
 
