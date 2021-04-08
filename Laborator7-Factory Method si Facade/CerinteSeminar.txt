@@ -1,0 +1,7 @@
+Cerinte seminar
+
+1. Crearea de diferite tipuri de caractere din joc
+- in prezent exista 3 tipuri de caractere DISNEY, DC si MARVEL
+-jocul fiind in dez exista riscul ca in viitor sa apara tipuri noi sau cele exist se vor modif
+-jocul permite alegerea unei teme care influenteaza colectia de personaje;
+trebuie uitizata o metoda eficienta care sa permitajocului utilizarea oricarei teme fara a modif major functionalitatea
