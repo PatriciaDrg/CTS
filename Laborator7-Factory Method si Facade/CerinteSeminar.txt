@@ -5,3 +5,8 @@ Cerinte seminar
 -jocul fiind in dez exista riscul ca in viitor sa apara tipuri noi sau cele exist se vor modif
 -jocul permite alegerea unei teme care influenteaza colectia de personaje;
 trebuie uitizata o metoda eficienta care sa permitajocului utilizarea oricarei teme fara a modif major functionalitatea
+
+2. Pentru a permite altor companii sau jucatorilor sa dezvolte solutii externe care sa se conecteze la joc trebuie dezvoltata o librarie (un API)
+- API-ul contine multe clase cu multe detalii
+- nu toate clasele sunt documentate
+- API-ul trebuie sa ofere o interfata simplificata pentru un set de functii de baza
