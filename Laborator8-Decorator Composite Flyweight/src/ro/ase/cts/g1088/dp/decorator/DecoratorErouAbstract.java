@@ -4,10 +4,11 @@ public class DecoratorErouAbstract extends SuperErou {
 
 	SuperErou erou = null;
 	public DecoratorErouAbstract(SuperErou erou) {
-		super(erou.nume, erou.puncteViata);
+		super(erou.getNume(), erou.getPuncteViata());
 		this.erou=erou;
 	}
 
+	
 	@Override
 	public void alearga() {
 		this.erou.alearga();

@@ -9,7 +9,12 @@ public abstract class SuperErou {
 		this.nume = nume;
 		this.puncteViata = puncteViata;
 	}
-	
+	public String getNume() {
+		return nume;
+	}
+	public int getPuncteViata() {
+		return puncteViata;
+	}
 	public abstract void alearga();
 	public abstract void esteLovit(int puncte);
 	public abstract void seVindeca(int puncte);
