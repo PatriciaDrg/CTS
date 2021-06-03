@@ -58,4 +58,44 @@ class TestStudentAlteTeste {
 			noteExistente[i]=student.getNota(i);
 		}
 		assertArrayEquals("test shallow pe setNote",noteStudent,noteExistente);
+	}
+	@Test(timeout=20)
+	public void testGetMediePerformance()throws ExceptieNota{
+		student.setNote(noteRandom);
+		student.getMedie();
+	}
+	@Test
+	public void testSetVarstaInverse() {
+		int varstaNoua=varstaInitiala +1;
+		student.setVarsta(varstaNoua);
+		assertNotEquals("set nu modifica valoarea atributului",varstaInitiala,student.getVarsta());
+	}
+	@Test
+	public void setGetNotaMinima() {
+		ArrayList<Integer>note=new ArrayList<>();
+		Random random=new Random();
+		note.add(random.nextInt(Student.MAX_NOTA)+1);
+		note.add(random.nextInt(Student.MAX_NOTA)+1);
+		student.setNote(note);
+		int notaMinima=student.getNotaMinima();
+		for(int i=0;i<student.getNrNote();i++) {
+			if(notaMinima>student.getNota(i)) {
+				fail("Minimul nu este calculat corect");
+			}
+		}
+		assertTrue(true);
+	}
+	@Test
+	public void testGetMedieMinimaCross() {
+		ArrayList<Integer>note=new ArrayList<>();
+		Random random=new Random();
+		note.add(random.nextInt(Student.MAX_NOTA)+1);
+		note.add(random.nextInt(Student.MAX_NOTA)+1);
+		student.setNote(note);
+		int notaMinima=Collection.min(note);
+		int notaMinimaCalculata=student.getNotaMinima();
+		assertEquals("nota minima nu este ok",notaMinima,notaMinimaCalculata);
+		
+	}
+
 }
